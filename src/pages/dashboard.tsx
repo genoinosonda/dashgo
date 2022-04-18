@@ -1,7 +1,15 @@
+import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Form/Header";
+import { Sidebar } from "../components/Form/Sidebar";
 
-export default function Dashboard(){
-    return(
-        <Header/>
-    )
+export default function Dashboard() {
+  return (
+    <Flex direction="column" h="100vh">
+      <Header />
+
+      <Flex width="100%" marginY="6" maxWidth="1480" mx="auto" px="6">
+          <Sidebar></Sidebar>
+      </Flex>
+    </Flex>
+  );
 }
