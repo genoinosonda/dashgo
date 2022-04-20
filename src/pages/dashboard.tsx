@@ -27,7 +27,7 @@ const options = {
     enabled: false,
   },
   xaxis: {
-    type: "datatime",
+    type: "datetime",
     axisBorder: {
       color: theme.colors.gray[600],
     },
@@ -79,7 +79,7 @@ export default function Dashboard() {
             <Text fontSize="lg" mb="4">
               Inscritos da semana
             </Text>
-            <Chart options={null} series={series} type="area" height={160} />
+            <Chart options={options} series={series} type="area" height={160} />
           </Box>
 
           <Box padding="8" bg="gray.800" borderRadius={8}>
